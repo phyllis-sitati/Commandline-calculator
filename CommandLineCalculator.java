@@ -22,5 +22,13 @@ public class CommandLineCalculator{
          }
         System.out.println(result);
       }
+	  //implementing the multiplication functionality
+	  else if(args[0].equalsIgnoreCase("mult")){
+         result = Integer.parseInt(args[1]);
+        for(int i=2; i<args.length; i++){
+        result = result*Integer.parseInt(args[i]);
+         }
+        System.out.println(result);
+      }
   }
 }
